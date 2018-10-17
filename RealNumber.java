@@ -2,8 +2,9 @@ public class RealNumber {
 
 private double x;
 
-public RealNumber() {
+public RealNumber(double value) {
 
+	x = value;
 
 }
 
@@ -14,12 +15,27 @@ public double getValue() {
 
 public String toString() {
 
-	return "";
+	return "" + x;
 }
 
-public String CompareReal(double a, double b) {
+public double add(RealNumber other) {
 
-	return "";
+	return x + other.getValue();
+}
+
+public double multiply(RealNumber other) {
+
+	return x*other.getValue();
+}
+
+public double divide(RealNumber other) {
+
+	return x/other.getValue();
+}
+
+public double subtract(RealNumber other) {
+
+	return x - other.getValue();
 }
 
 }
